@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block head_title %}
+{{instance.title}}  {{ block.super}}
+{% endblock head_title %}
+
+{% block content %}
+<div class ='col-sm-6  col-sm-offset-3'>
+<h1>{{ title }} <small>{{instance.startdate }}<</small></h1>
+{{ instant.description | linebreaks}} <br/> 
+
+
+{% endblock content %}
